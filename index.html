@@ -1,0 +1,173 @@
+<body>
+<style>
+body {
+    background: black;
+    color: white;
+    font-family: xkcd, Helvetica, sans-serif;
+}
+@media (orientation: landscape) {
+    img {
+        width: 45%;
+    }
+}
+
+@media (orientation: portrait) {
+    img {
+        height: 45%;
+        max-width: 100%;
+    }
+}
+center {
+    cursor: pointer;
+}
+h1 {
+    margin: 40px;
+}
+</style>
+<center onclick='refresh()'>
+<h1>Appuyer sur une carte pour en tirer de nouvelles</h1>
+<img src="cards/0.svg" />
+<img src="cards/1.svg" />
+<img src="cards/2.svg" />
+<img src="cards/3.svg" />
+<img src="cards/4.svg" />
+<img src="cards/5.svg" />
+<img src="cards/6.svg" />
+<img src="cards/7.svg" />
+<img src="cards/8.svg" />
+<img src="cards/9.svg" />
+<img src="cards/10.svg" />
+<img src="cards/11.svg" />
+<img src="cards/12.svg" />
+<img src="cards/13.svg" />
+<img src="cards/14.svg" />
+<img src="cards/15.svg" />
+<img src="cards/16.svg" />
+<img src="cards/17.svg" />
+<img src="cards/18.svg" />
+<img src="cards/19.svg" />
+<img src="cards/20.svg" />
+<img src="cards/21.svg" />
+<img src="cards/22.svg" />
+<img src="cards/23.svg" />
+<img src="cards/24.svg" />
+<img src="cards/25.svg" />
+<img src="cards/26.svg" />
+<img src="cards/27.svg" />
+<img src="cards/28.svg" />
+<img src="cards/29.svg" />
+<img src="cards/30.svg" />
+<img src="cards/31.svg" />
+<img src="cards/32.svg" />
+<img src="cards/33.svg" />
+<img src="cards/34.svg" />
+<img src="cards/35.svg" />
+<img src="cards/36.svg" />
+<img src="cards/37.svg" />
+<img src="cards/38.svg" />
+<img src="cards/39.svg" />
+<img src="cards/40.svg" />
+<img src="cards/41.svg" />
+<img src="cards/42.svg" />
+<img src="cards/43.svg" />
+<img src="cards/44.svg" />
+<img src="cards/45.svg" />
+<img src="cards/46.svg" />
+<img src="cards/47.svg" />
+<img src="cards/48.svg" />
+<img src="cards/49.svg" />
+<img src="cards/50.svg" />
+<img src="cards/51.svg" />
+<img src="cards/52.svg" />
+<img src="cards/53.svg" />
+<img src="cards/54.svg" />
+<img src="cards/55.svg" />
+<img src="cards/56.svg" />
+<img src="cards/57.svg" />
+<img src="cards/58.svg" />
+<img src="cards/59.svg" />
+<img src="cards/60.svg" />
+<img src="cards/61.svg" />
+<img src="cards/62.svg" />
+<img src="cards/63.svg" />
+<img src="cards/64.svg" />
+<img src="cards/65.svg" />
+<img src="cards/66.svg" />
+<img src="cards/67.svg" />
+<img src="cards/68.svg" />
+<img src="cards/69.svg" />
+<img src="cards/70.svg" />
+<img src="cards/71.svg" />
+<img src="cards/72.svg" />
+<img src="cards/73.svg" />
+<img src="cards/74.svg" />
+<img src="cards/75.svg" />
+<img src="cards/76.svg" />
+<img src="cards/77.svg" />
+<img src="cards/78.svg" />
+<img src="cards/79.svg" />
+<img src="cards/80.svg" />
+<img src="cards/81.svg" />
+<img src="cards/82.svg" />
+<img src="cards/83.svg" />
+<img src="cards/84.svg" />
+<img src="cards/85.svg" />
+<img src="cards/86.svg" />
+<img src="cards/87.svg" />
+<img src="cards/88.svg" />
+<img src="cards/89.svg" />
+<img src="cards/90.svg" />
+<img src="cards/91.svg" />
+<img src="cards/92.svg" />
+<img src="cards/93.svg" />
+<img src="cards/94.svg" />
+<img src="cards/95.svg" />
+<img src="cards/96.svg" />
+<img src="cards/97.svg" />
+<img src="cards/98.svg" />
+<img src="cards/99.svg" />
+<img src="cards/100.svg" />
+<img src="cards/101.svg" />
+<img src="cards/102.svg" />
+<img src="cards/103.svg" />
+<img src="cards/104.svg" />
+<img src="cards/105.svg" />
+<img src="cards/106.svg" />
+<img src="cards/107.svg" />
+<img src="cards/108.svg" />
+<img src="cards/109.svg" />
+<img src="cards/110.svg" />
+<img src="cards/111.svg" />
+<img src="cards/112.svg" />
+<img src="cards/113.svg" />
+<img src="cards/114.svg" />
+<img src="cards/115.svg" />
+<img src="cards/116.svg" />
+<img src="cards/117.svg" />
+<img src="cards/118.svg" />
+<img src="cards/119.svg" />
+<img src="cards/120.svg" />
+<img src="cards/121.svg" />
+<img src="cards/122.svg" />
+<img src="cards/123.svg" />
+<img src="cards/124.svg" />
+<img src="cards/125.svg" />
+<img src="cards/126.svg" />
+<img src="cards/127.svg" />
+<img src="cards/128.svg" />
+<img src="cards/129.svg" />
+<img src="cards/130.svg" />
+<img src="cards/131.svg" />
+<img src="cards/132.svg" />
+
+<script>
+function refresh() {
+    cards = document.querySelectorAll('img');
+    cards.forEach(c => c.style = 'display:none')
+    card1 = cards[Math.floor(Math.random()*cards.length)]
+    card2 = cards[Math.floor(Math.random()*cards.length)]
+    card1.style = ''
+    card2.style = ''
+}
+refresh()
+</script>
